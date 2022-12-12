@@ -233,12 +233,12 @@ footer .copyright {
 
 /*** Top Image ***/
 
-.topimage-container {
+.hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
-.topimage-container h1 {
+.hero-area h1 {
   margin: 0;
   display: flex;
   justify-content: center;
@@ -336,6 +336,14 @@ aside {
     align-items: center;
     flex-flow: row wrap;
 }
+
+.info-headers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+addresses
 
 /* ==========================================================================
    FAQ Page
@@ -567,8 +575,55 @@ aside {
     
 @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
-  
+  .content-wrapper {
+      max-width: 960px;
+  }
+
+  .hero-area h1 {
+      width: 100%;
+  }
+
+  aside .content-wrapper {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  aside .content-wrapper .newsletter-signup,
+  aside .content-wrapper .download-itinerary {
+      width: 27%;
+  }
+
+  .retreats h1 {
+      width: 90%;
+    }
+ 
+  .retreats article {
+      flex-basis: 1;
+      flex-direction: row;
+    }
+ 
+  .reviews article div {
+      width: 50%;
+  }
+
+
+/* ================
+   About Page
+   ================ */
+   .mission h1,
+   .contact-section .content-wrapper h1 {
+       width: 40%;
+   }
+
+/* ================
+  FAQ Page
+  ================= */
+   .faq h2 {
+       width: 100%;
+   }
+
 }
+
 
 /* ==========================================================================
    Print styles.
