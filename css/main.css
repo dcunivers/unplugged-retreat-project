@@ -112,15 +112,20 @@ a {
 
 h1 {
   font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
 }
 
 h3
 h4 {
   font-family: 'Poppins', sans-serif;
+  font-weight: light;
+  margin: 20px 0;
+  font-size: 1.125em;
 }
 
 p {
-
+  font-size: .875em;
+  line-height: 1.285;
 }
 
 img {
@@ -136,7 +141,8 @@ address {
 }
 
 .content-wrapper {
-
+  width: 90%;
+  margin: 50px 0;
 }
 
 #email-field {
@@ -190,17 +196,18 @@ header nav ul {
 }
 
 footer {
+    display: flex;
     flex-direction: column;
 }
 
 footer p {
-  margin: 0;
+    margin: 0;
 }
 
 footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer .social-icons p {
@@ -250,7 +257,11 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #86AA81;
+  color: white;
 }
+
+
 
 /*** Retreats ***/
 
@@ -337,13 +348,6 @@ aside {
     flex-flow: row wrap;
 }
 
-.info-headers {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-addresses
 
 /* ==========================================================================
    FAQ Page
@@ -358,7 +362,7 @@ addresses
 
 .faqs .content-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
     width: 55%;
@@ -367,11 +371,12 @@ addresses
 
 .faqs h1 {
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .faqs content {
     margin-bottom: 50px;
-    flex-basis: auto;
+    flex-basis: 45%;
 }
 
 /* ==========================================================================
@@ -498,9 +503,16 @@ addresses
     }
     
     aside .content-wrapper {
+        margin: 50px 0;
         display: flex;
         justify-content: space-around;
         flex-flow: wrap;
+    }
+
+    aside .content-wrapper .newsletter-signup,
+    aside .content-wrapper .download-itinerary {
+      width: 40%;
+      margin: 0;
     }
 
     .retreats .article {
@@ -512,19 +524,35 @@ addresses
     }
 
     .retreats .retreat-items-description {
-       width: 50%;
+        width: 62%;
     }
 
     .reviews article {
         display: flex; 
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+    }
+
+    .reviews article div {
+        width: 49%;
     }
 
     .footer-content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+    }
+
+    footer .content-wrapper {
+      width: 65%;
+      margin: 100px 0;
+    }
+
+    footer .contact {
+      margin-bottom: 0;
+    }
+  
+    footer .copyright {
+      width: 100%;
     }
 
     /* ==========================================
@@ -536,13 +564,14 @@ addresses
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 20px;
     }
 
     .mission-content p {
-        width: 50%;
+        width: 45%;
     }
 
-    .contact-section .content-wrapper h2 {
+    .contact-section .content-wrapper h1 {
         width: 80%;
     }
 
@@ -575,12 +604,17 @@ addresses
     
 @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
+  
+  header {
+    padding: 15px 0;
+  }
+  
   .content-wrapper {
       max-width: 960px;
   }
 
   .hero-area h1 {
-      width: 100%;
+      width: 60%;
   }
 
   aside .content-wrapper {
@@ -598,12 +632,12 @@ addresses
     }
  
   .retreats article {
-      flex-basis: 1;
+      flex-basis: 33%;
       flex-direction: row;
     }
  
   .reviews article div {
-      width: 50%;
+      width: 42%;
   }
 
 
@@ -612,8 +646,14 @@ addresses
    ================ */
    .mission h1,
    .contact-section .content-wrapper h1 {
-       width: 40%;
+       width: 95%;
    }
+
+   .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
 /* ================
   FAQ Page
