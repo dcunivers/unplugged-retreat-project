@@ -11,6 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
 html {
   color: #222;
   font-size: 1em;
@@ -96,6 +97,8 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #e2e3ed;
+  text-align: left;
 }
 
 ul, ol {
@@ -106,20 +109,19 @@ ul, ol {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
   color: #e2e3ed;
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
+  font-weight: 500;
 }
 
 h3
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-weight: light;
-  margin: 20px 0;
+  font-weight: 500;
   font-size: 1.125em;
 }
 
@@ -128,29 +130,13 @@ p {
   line-height: 1.285;
 }
 
-img {
-
-}
-
 address {
   font-style: normal;
-}
-
-.footer-content {
-  text-align: center;
 }
 
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
-}
-
-#email-field {
-  font-style: italic;
-}
-
-#submit-button {
-  text-transform: uppercase;
 }
 
     /* -------------------- Base Header - Footer Styles -------------------- */
@@ -161,6 +147,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #202322;
 }
 
 header {
@@ -172,21 +159,25 @@ header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .header-divider {
+    background: #3a3a3a; 
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
 }
 
 header nav {
+    width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
 }
 
 header nav ul {
@@ -195,13 +186,22 @@ header nav ul {
     width: 100%;
 }
 
+header nav ul li {
+    font-size: 1.125em;
+}
+
 footer {
-    display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 footer p {
     margin: 0;
+}
+
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
 }
 
 footer .social-icons {
@@ -220,36 +220,27 @@ footer .contact {
     margin-bottom: 50px;
 }
 
-footer .content-wrapper {
-    width: 55%;
-    margin: 50px 0;
-}
-
 footer .copyright {
     margin: 20px 0;  
 }
 
-/*** Content Wrapper ***/
-
-.content-wrapper {
-  width: 90%;
-  margin: 50px 0;
-}
-
         /* -------------------- Mobile Styles - Homepage -------------------- */
 
-/*** Top Image ***/
+/*** Hero Area ***/
 
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
 .hero-area h1 {
-  margin: 0;
-  display: flex;
-  justify-content: center;
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500; 
+  line-height: 1.2; 
 }
+
 /*** Aside ***/
 
 aside {
@@ -257,22 +248,41 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #86AA81;
-  color: white;
+  background-color: #527158;
 }
 
-
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /*** Retreats ***/
 
 .retreats {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
-  width: 60%;
-  padding: 16px 0px;
-  margin: 0 auto;
 }
 
 .retreats h1 {
@@ -293,6 +303,7 @@ aside {
 
 .retreats p {
   margin: 0;
+  text-align: center;
 }
 
 /*** Reviews ***/
@@ -301,21 +312,18 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  width: 60%;
-  margin: 0 auto;
+  background-color: #2a423a;
 }
 
 .reviews h1 {
   margin-bottom: 40px;
-}
-
-.reviews article {
-  width: 60%;
-  flex-basis: auto;
+  text-indent: 75px;
+  line-height: 1;
 }
 
 .reviews h3 {
-  width: 60%;
+  width: 55%;
+  margin: 20px 0;
 }
 
 
@@ -327,25 +335,20 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: wrap;
+    flex-flow: row wrap;
+    background-color: #527158;
 }
 
 .contact-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: row wrap;
+    background-color: #2a423a;
 }
 
 .contact-content p {
     margin: 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
 }
 
 
@@ -358,25 +361,29 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #527158;
 }
 
 .faqs .content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 55%;
     margin: 50px 0 0 0;
 }
 
 .faqs h1 {
     margin-bottom: 40px;
-    width: 100%;
+    line-height: 1;
 }
 
 .faqs content {
     margin-bottom: 50px;
     flex-basis: 45%;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 
 /* ==========================================================================
@@ -474,34 +481,53 @@ aside {
         margin: 100px 0;
     }
 
+    h1 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+  
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+    }
+
+    /*** HEADER ***/
+
     header {
-        margin: 0;
-        display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        margin: 33px 0;
     }
 
     header .content-wrapper {
-        width: 80%;
-        display: flex;
+        width: 100%;
         justify-content: space-around;
     }
-    
+
+    header figure {
+        width: 30%;
+    }
+
     header nav {
-        padding: 0;
-        margin: 0;
+        width: 20%;
     }
 
     header nav ul {
-        width: 40%;
-        display: flex;
         justify-content: space-between;
-        padding-left: 55%;
     }
 
     .header-divider {
         display: none;
     }
     
+    /** Hero Area **/
+
+    .hero-area h1 {
+        font-size: 3em;
+        line-height: 1;
+        margin: 0;
+   }
+  
+    /** Aside **/ 
     aside .content-wrapper {
         margin: 50px 0;
         display: flex;
@@ -511,11 +537,15 @@ aside {
 
     aside .content-wrapper .newsletter-signup,
     aside .content-wrapper .download-itinerary {
-      width: 40%;
-      margin: 0;
+        width: 40%;
+        margin: 0;
     }
 
-    .retreats .article {
+    /** Retreats **/
+    .retreats h2 {
+      margin-bottom: 20px;
+    }
+    .retreats article {
         display: flex;
         justify-content: center;
         align-items: center; 
@@ -527,32 +557,53 @@ aside {
         width: 62%;
     }
 
+    /** Reviews **/
     .reviews article {
         display: flex; 
         justify-content: space-between;
+    }
+
+    .reviews h2 {
+      width: 85%;
     }
 
     .reviews article div {
         width: 49%;
     }
 
-    .footer-content {
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
+    }
+
+    /** Footer **/
+    footer .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
     }
 
     footer .content-wrapper {
-      width: 65%;
-      margin: 100px 0;
+        width: 65%;
+        margin: 100px 0;
     }
 
     footer .contact {
-      margin-bottom: 0;
+        margin-bottom: 0;
     }
+
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+
+    footer p {
+      line-height: 1.285;
+    }  
   
     footer .copyright {
-      width: 100%;
+        width: 100%;
     }
 
     /* ==========================================
@@ -581,6 +632,10 @@ aside {
         align-items: flex-start;
     }
 
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
+
     /* ==========================================
        FAQ Page 
        ==========================================
@@ -598,10 +653,15 @@ aside {
         width: 100%;
     }
 
+    .faq h4,
+    .faq p {
+      font-size: .875em;
+      line-height: 1.125;
+    }
+
 }
   
-
-    
+  
 @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
   
@@ -613,10 +673,27 @@ aside {
       max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
+  /** Hero Area **/
   .hero-area h1 {
+      font-size: 3.75em;
       width: 60%;
   }
 
+  /** Aside **/
   aside .content-wrapper {
       display: flex;
       justify-content: space-around;
@@ -624,9 +701,14 @@ aside {
 
   aside .content-wrapper .newsletter-signup,
   aside .content-wrapper .download-itinerary {
-      width: 27%;
+      width: 30%;
   }
 
+  .form-description p {
+    font-size: 1.125em;
+  }
+
+  /** Retreats **/
   .retreats h1 {
       width: 90%;
     }
@@ -636,10 +718,21 @@ aside {
       flex-direction: row;
     }
  
+  /** Reviews **/
+
+  .reviews h2 {
+    padding-bottom: 50px; 
+  }
+
   .reviews article div {
       width: 42%;
   }
 
+  /** Footer **/
+
+  footer h4 {
+    font-size: 1.875em;
+  }
 
 /* ================
    About Page
@@ -647,21 +740,26 @@ aside {
    .mission h1,
    .contact-section .content-wrapper h1 {
        width: 95%;
+       font-size: 3em;
    }
 
-   .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+   .contact-content h4 {
+      font-size: 1.875em;
   }
 
 /* ================
   FAQ Page
   ================= */
-   .faq h2 {
+   .faqs h2 {
        width: 100%;
+       font-size: 3em;
    }
 
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
+  }
 }
 
 
