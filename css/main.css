@@ -190,6 +190,22 @@ header nav ul li {
     font-size: 1.125em;
 }
 
+img { 
+	  width: 100%;
+}
+
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+figure {
+    margin: 0;
+}
+
 footer {
     flex-direction: column;
     text-align: center;
@@ -232,6 +248,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat.jpg) center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -283,6 +301,8 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat-features.jpg) center no-repeat #333;
+  background-size: cover;
 }
 
 .retreats h1 {
