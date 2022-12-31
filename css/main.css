@@ -326,6 +326,11 @@ input[type=button] {
   text-align: center;
 }
 
+.retreats i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /*** Reviews ***/
 
 .reviews {
@@ -709,7 +714,6 @@ input[type=button] {
       font-size: .875em;
       line-height: 1.125;
     }
-
 }
   
   
