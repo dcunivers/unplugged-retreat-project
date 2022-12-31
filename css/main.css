@@ -342,7 +342,6 @@ input[type=button] {
 
 .reviews h1 {
   margin-bottom: 40px;
-  text-indent: 75px;
   line-height: 1;
 }
 
@@ -603,6 +602,10 @@ input[type=button] {
 
     .retreats .retreat-items-description {
         width: 62%;
+    }
+
+    .retreats i {
+        margin-bottom: 30px;
     }
 
     /** Reviews **/
