@@ -150,10 +150,6 @@ footer {
     background: #202322;
 }
 
-header {
-    padding: 15px 0;
-}
-
 header .content-wrapper {
     display: flex;
     justify-content: center;
@@ -723,10 +719,14 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
   
-  header {
-    padding: 15px 0;
+  body {
+      background-color: #202322;
   }
-  
+
+  header .content-wrapper {
+      justify-content: space-between;
+  }
+
   .content-wrapper {
       max-width: 960px;
   }
@@ -763,19 +763,23 @@ input[type=button] {
   }
 
   .form-description p {
-    font-size: 1.125em;
+      font-size: 1.125em;
   }
+  
 
   /** Retreats **/
   .retreats h1 {
       width: 90%;
     }
- 
+  
   .retreats article {
       flex-basis: 33%;
       flex-direction: row;
     }
- 
+  .retreats .retreat-items {
+      flex-wrap: wrap;
+  }
+
   /** Reviews **/
 
   .reviews h2 {
