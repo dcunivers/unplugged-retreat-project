@@ -431,16 +431,18 @@ input[type=button] {
 .faqs h1 {
     margin-bottom: 40px;
     line-height: 1;
+    width: 100%;
 }
 
-.faqs content {
+.faqs .questions {
     margin-bottom: 50px;
     flex-basis: 45%;
 }
 
-.faq-content h4 {
+.faqs .questions h4 {
   line-height: 1.333;
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -715,22 +717,22 @@ input[type=button] {
        ==========================================
     */
 
-    .faq .content-wrapper {
+    .faqs .content-wrapper {
         justify-content: space-between;
     }
 
-    .faq-content {
-        flex-basis: 40%;
-    }
-
-    .faq h2 {
+    .faqs h2 {
         width: 100%;
     }
 
-    .faq h4,
-    .faq p {
+    .faqs h4,
+    .faqs p {
       font-size: .875em;
       line-height: 1.125;
+    }
+
+    .questions {
+      flex-basis: 45%;
     }
 }
   
@@ -852,8 +854,8 @@ input[type=button] {
        font-size: 3em;
    }
 
-  .faq h4,
-  .faq p {
+  .faqs h4,
+  .faqs p {
       font-size: 1.125em;
       line-height: 1;
   }
